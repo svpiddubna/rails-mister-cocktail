@@ -1,0 +1,31 @@
+<div class='container'>
+  <div class="row dose-card">
+    <div class="col-xs-12 col-md-6">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.banner_url %>);">
+      </div>
+      <%= link_to 'Back to cocktails', cocktails_path, class: "text-info" %>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h1><%= @cocktail.name %></h1>
+      <div class="p-3 mb-2 bg-light text-dark">
+        <% @cocktail.doses.each do |dose| %>
+          <p>
+          <%= dose.ingredient.name %>
+          <%= dose.description %>
+          <%= link_to dose_path(dose), method: :delete do %>
+            <i class="far fa-times-circle cross"></i>
+          <% end %>
+          </p>
+        <% end %>
+      </div>
+      <%= simple_form_for([@cocktail, @dose]) do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient, collection: Ingredient.all.order(:name), prompt: "Choose an ingredient" %>
+        <%= f.submit "Add ingredient", class: "btn btn-info" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
