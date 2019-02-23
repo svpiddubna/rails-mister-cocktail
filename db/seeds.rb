@@ -25,16 +25,16 @@ Cocktail.create!(
   banner_url: "https://cdn.liquor.com/wp-content/uploads/2018/05/08110806/negroni-720x720-recipe.jpg"
 )
 Cocktail.create!(
-  name: "Gin and Tonic",
-  banner_url: "https://www.shakedrinkrepeat.com/wp-content/uploads/2018/03/the_perfect_gin_and_tonic_recipe_photo.jpg"
+  name: "Bloody Mary",
+  banner_url: "https://cdn.liquor.com/wp-content/uploads/2017/09/01105541/classic-bloody-mary-720x720-recipe.jpg"
 )
 Cocktail.create!(
-  name: "Strawberry Daiquiri",
-  banner_url: "http://www.delscookingtwist.com/wp-content/uploads/2018/03/Strawberry-Daiquiri-with-Cardamom_9988.jpg"
+  name: "Martini",
+  banner_url: "https://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/classic-gin-martini-mr.jpg?itok=3a41VkCQ"
 )
 Cocktail.create!(
-  name: "Mojito",
-  banner_url: "https://cdn.liquor.com/wp-content/uploads/2018/09/04153106/mojito-720x720-recipe.jpg"
+  name: "Vesper",
+  banner_url: "https://cdn.liquor.com/wp-content/uploads/2018/01/29145254/vesper-720x720-recipe.jpg"
 )
 Cocktail.create!(
   name: "Negroni",
