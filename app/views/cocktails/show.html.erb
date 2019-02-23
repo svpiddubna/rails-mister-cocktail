@@ -1,7 +1,7 @@
 <div class='container'>
   <div class="row dose-card">
     <div class="col-xs-12 col-md-6">
-      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.banner_url %>);">
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo, height: 450, width: 555, crop: :fill %>');">
       </div>
       <%= link_to 'Back to cocktails', cocktails_path, class: "text-info" %>
     </div>
